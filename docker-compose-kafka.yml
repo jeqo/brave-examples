@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  kafka-zookeeper:
+    image: openzipkin/zipkin-kafka
+    container_name: kafka-zookeeper
+    ports:
+      - 2181:2181
+      - 9092:9092
+      - 19092:19092
