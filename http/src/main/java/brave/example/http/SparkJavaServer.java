@@ -1,5 +1,6 @@
-package io.zipkin.contrib.brave.example.http;
+package brave.example.http;
 
+import brave.example.common.ZipkinConfig;
 import brave.http.HttpTracing;
 import brave.sparkjava.SparkTracing;
 

@@ -1,4 +1,4 @@
-package io.zipkin.contrib.brave.example.http;
+package brave.example.common;
 
 import brave.Tracing;
 import com.typesafe.config.Config;
@@ -13,7 +13,7 @@ public class ZipkinConfig {
     final String senderType;
     final Config senderConfig;
 
-    static ZipkinConfig load() {
+    public static ZipkinConfig load() {
         return load(ConfigFactory.load().getConfig("zipkin"));
     }
 
