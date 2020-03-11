@@ -21,11 +21,19 @@
     </properties>
 
     <modules>
+        <module>common</module>
         <module>http</module>
+        <module>messaging</module>
+        <module>rpc</module>
     </modules>
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>brave-example-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
             <dependency>
                 <groupId>io.zipkin.brave</groupId>
                 <artifactId>brave-bom</artifactId>
