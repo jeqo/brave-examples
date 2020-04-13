@@ -47,6 +47,20 @@ Propagation brings 2 important components: Injector and Extractor. `Injector` in
 
 //TODO
 
+#### Properties
+
+##### no-op
+
+#### Components
+
+##### Pending Spans
+
+###### Components
+
+#### Features
+
+##### Always Sample Local
+
 ### Propagation
 
 //TODO
@@ -72,6 +86,10 @@ Propagation brings 2 important components: Injector and Extractor. `Injector` in
 //TODO
 
 ### Finished Span Handlers
+
+//TODO
+
+### Span Listeners
 
 //TODO
 
