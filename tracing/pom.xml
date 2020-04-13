@@ -10,30 +10,22 @@
     <version>0.1.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>brave-example-messaging</artifactId>
-
-  <properties>
-    <kafka.version>2.4.0</kafka.version>
-  </properties>
+  <artifactId>brave-example-tracing</artifactId>
 
   <dependencies>
     <dependency>
-      <groupId>${project.groupId}</groupId>
-      <artifactId>brave-example-tracing</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.kafka</groupId>
-      <artifactId>kafka-clients</artifactId>
-      <version>${kafka.version}</version>
-    </dependency>
-
-    <dependency>
       <groupId>io.zipkin.brave</groupId>
-      <artifactId>brave-instrumentation-kafka-clients</artifactId>
+      <artifactId>brave</artifactId>
     </dependency>
     <dependency>
-      <groupId>io.zipkin.brave</groupId>
-      <artifactId>brave-instrumentation-jms</artifactId>
+      <groupId>io.zipkin.aws</groupId>
+      <artifactId>brave-propagation-aws</artifactId>
+      <version>0.20.0</version>
+    </dependency>
+    <dependency>
+      <groupId>io.zipkin.gcp</groupId>
+      <artifactId>brave-propagation-stackdriver</artifactId>
+      <version>0.16.0</version>
     </dependency>
   </dependencies>
 
