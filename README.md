@@ -1,18 +1,14 @@
 # Brave example
 
+> Brave version: `5.11.3-SNAPSHOT` (ref: openzipkin/brave#1148)
+
 ## How to use
 
 ### Start a Zipkin server
 
-See [Zipkin docs](https://github.com/openzipkin/zipkin) and its 
-[docker examples](https://github.com/openzipkin/zipkin/tree/master/docker/examples).
+```shell script
+make up
+#...
+make ps
+```
 
-### HTTP examples
-
-Servers:
-
-- SparkJavaServer
-
-Clients:
-
-- OkHttp3Client
