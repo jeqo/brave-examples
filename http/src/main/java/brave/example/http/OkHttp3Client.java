@@ -47,8 +47,8 @@ public class OkHttp3Client {
     } catch (IOException e) {
       e.printStackTrace();
     } finally {
-      tracing.close();
       reporter.close();
+      tracing.close();
     }
   }
 }
